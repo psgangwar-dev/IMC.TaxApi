@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.TaxApi.Host", "IMC.TaxApi\IMC.TaxApi.Host.csproj", "{435B8ABF-7C60-4672-92BA-443B286D7339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.TaxApi.Core", "IMC.TaxApi.Core\IMC.TaxApi.Core.csproj", "{269090DD-61A6-48FB-B4C8-A79F2111B592}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{85C8D8EA-1266-4CE7-A954-73AF328B51F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICM.TaxApi.Models", "ICM.TaxApi.Models\ICM.TaxApi.Models.csproj", "{0FB85062-642E-42BB-8654-23EBD97FB6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICM.Tax.Core.Tests", "ICM.Tax.Core.Tests\ICM.Tax.Core.Tests.csproj", "{51287FF4-B6DA-4DD4-90BD-33A0A0197E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Tax.Host.Tests", "IMC.Tax.Host.Tests\IMC.Tax.Host.Tests.csproj", "{80951190-B574-431A-82AF-ABC658F20571}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{435B8ABF-7C60-4672-92BA-443B286D7339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435B8ABF-7C60-4672-92BA-443B286D7339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435B8ABF-7C60-4672-92BA-443B286D7339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435B8ABF-7C60-4672-92BA-443B286D7339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269090DD-61A6-48FB-B4C8-A79F2111B592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269090DD-61A6-48FB-B4C8-A79F2111B592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269090DD-61A6-48FB-B4C8-A79F2111B592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269090DD-61A6-48FB-B4C8-A79F2111B592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB85062-642E-42BB-8654-23EBD97FB6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB85062-642E-42BB-8654-23EBD97FB6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB85062-642E-42BB-8654-23EBD97FB6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB85062-642E-42BB-8654-23EBD97FB6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51287FF4-B6DA-4DD4-90BD-33A0A0197E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51287FF4-B6DA-4DD4-90BD-33A0A0197E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51287FF4-B6DA-4DD4-90BD-33A0A0197E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51287FF4-B6DA-4DD4-90BD-33A0A0197E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80951190-B574-431A-82AF-ABC658F20571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80951190-B574-431A-82AF-ABC658F20571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80951190-B574-431A-82AF-ABC658F20571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80951190-B574-431A-82AF-ABC658F20571}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51287FF4-B6DA-4DD4-90BD-33A0A0197E1E} = {85C8D8EA-1266-4CE7-A954-73AF328B51F4}
+		{80951190-B574-431A-82AF-ABC658F20571} = {85C8D8EA-1266-4CE7-A954-73AF328B51F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDA0E894-DD15-4373-B5F7-90B437D1A11F}
+	EndGlobalSection
+EndGlobal
