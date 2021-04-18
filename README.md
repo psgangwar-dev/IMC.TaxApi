@@ -11,8 +11,8 @@ TaxApi API endpoints provide detailed sales tax rates and calculations. Currentl
 * [Code Structure](#code-structure)
 * [ApiConsumer Configuration](#api-configuration)
 * [Api Actions](#api-actions) 
-* [Testing](#testing)
 * [Swagger Documetation](#api-swagger-field) 
+* [Testing](#testing)
 * [Version History](#api-version-history) 
 
 
@@ -77,9 +77,12 @@ Both Api Actions require a ConsumerKey to be passed in the request header. Based
 
 3. `POST /v1/tax/ordersaletax` : Calculates the taxes for an order
 
-## Testing
-
 ## Swagger Documetation
+LaunchSetting.js has the swagger URL as the launch URL. Once the code is executed users will be able to see the SwaggerUI on their browsers as below. 
+
+![image](https://user-images.githubusercontent.com/82673102/115161077-99f65500-a069-11eb-99ef-3cefcdbc7c6a.png)
+
+## Testing
 
 ## Version History
     * ReadMe.md Created By Prabha S Gangwar on 04/17/2021
