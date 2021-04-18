@@ -6,4 +6,3 @@ C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.TaxApi.Models\obj\Debug\netco
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.TaxApi.Models\obj\Debug\netcoreapp3.1\ICM.TaxApi.Models.csproj.CoreCompileInputs.cache
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.TaxApi.Models\obj\Debug\netcoreapp3.1\ICM.TaxApi.Models.dll
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.TaxApi.Models\obj\Debug\netcoreapp3.1\ICM.TaxApi.Models.pdb
-C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.TaxApi.Models\obj\Debug\netcoreapp3.1\ICM.TaxApi.Models.csprojAssemblyReference.cache
