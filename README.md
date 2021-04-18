@@ -99,11 +99,9 @@ LaunchSetting.js has the swagger URL as the launch URL. Once the code is execute
 
 
     **Request Section**
-        
         ![image](https://user-images.githubusercontent.com/82673102/115161993-ccef1780-a06e-11eb-8cb2-6f4b972380cd.png)
     
     **Error Response**
-    
         ![image](https://user-images.githubusercontent.com/82673102/115162020-fa3bc580-a06e-11eb-8417-4d7ba26d4367.png)
         
     **Success Response**
