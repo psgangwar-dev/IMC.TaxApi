@@ -43,6 +43,14 @@ namespace IMC.TaxApi
             // Http Client
             services.AddHttpClient();
 
+            services.AddMvc(options =>
+            {
+                options.AllowEmptyInputInBodyModelBinding = true;
+            }).AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.IgnoreNullValues = true;
+            });
+
             // Api level dependecies 
             services.AddSingleton<ITaxRepository, TaxRepository>();
             services.AddSingleton<ITaxProvider, TaxProvider>();

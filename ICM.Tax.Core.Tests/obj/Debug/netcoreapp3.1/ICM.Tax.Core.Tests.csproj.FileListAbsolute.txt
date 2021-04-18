@@ -94,3 +94,4 @@ C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netc
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.dll
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.pdb
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.genruntimeconfig.cache
+C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.csprojAssemblyReference.cache

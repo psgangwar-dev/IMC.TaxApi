@@ -47,9 +47,9 @@ namespace IMC.TaxApi.Core.RestClients
             {
                 HttpResponseMessage response = null;
 
-                var httpclient = _httpFactory.CreateClient("TaxJarApi");
+                var httpclient = _httpFactory.CreateClient();
 
-                using (var request = CreateJsonRequest(HttpMethod.Get, httpclient.BaseAddress, uri))
+                using (var request = CreateJsonRequest(HttpMethod.Get, uri))
                 {
                     response = await httpclient.SendAsync(request);
 
@@ -71,15 +71,15 @@ namespace IMC.TaxApi.Core.RestClients
             }
         }
 
-        public async Task<T> PostAsync<T>(string uri, object body = null)
+        public async Task<T> PostAsync<T>(string uri, object body)
         {
             try
             {
                 HttpResponseMessage response = null;
 
-                var httpclient = _httpFactory.CreateClient("TaxJarApi");
+                var httpclient = _httpFactory.CreateClient();
 
-                using (var request = CreateJsonRequest(HttpMethod.Post, httpclient.BaseAddress, uri, body))
+                using (var request = CreateJsonRequest(HttpMethod.Post, uri, body))
                 {
                     response = await httpclient.SendAsync(request);
 
@@ -101,7 +101,7 @@ namespace IMC.TaxApi.Core.RestClients
             }
         }
 
-        private HttpRequestMessage CreateJsonRequest(HttpMethod httpMethod, Uri BaseAddress, string uri, object spec = null)
+        private HttpRequestMessage CreateJsonRequest(HttpMethod httpMethod, string uri, object spec = null)
         {
             if (!_httpContextAccessor.HttpContext.Request.Headers.TryGetValue("ConsumerKey", out var consumerKey))
                 throw new InvalidOperationException("Invalid.ConsumerKey");
@@ -112,7 +112,7 @@ namespace IMC.TaxApi.Core.RestClients
                 throw new InvalidOperationException("NotFound.ParterConfig");
 
 
-            var request = new HttpRequestMessage(httpMethod, new Uri(new Uri(uri = consumerPartnerConfig.PartnerBaseEndpoint), uri));
+            var request = new HttpRequestMessage(httpMethod, new Uri($"{consumerPartnerConfig.PartnerBaseEndpoint}{uri}"));
 
             if (httpMethod == HttpMethod.Put || httpMethod == HttpMethod.Post)
             {
