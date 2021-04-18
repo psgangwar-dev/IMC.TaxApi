@@ -1,10 +1,10 @@
 # TaxApi
 
-TaxApi API endpoints provide detailed sales tax rates and calculations. Currentkly this Api supports below two methods 
-1. Gets the Tax rates for a given location
-2. Calculate the taxes for an order
+TaxApi API endpoints provide detailed sales tax rates and calculations. Currently this Api supports below two methods 
+1. `GET /v1/tax/rate` : Gets the Tax rates for a given location
+2. `POST /v1/tax/ordersaletax`  Calculates the taxes for an order
 
-## Api Details:
+## Api Specifications:
 
 * [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
