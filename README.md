@@ -52,7 +52,24 @@ As shown in the screen shot below this solution contains 5 different projects
 
 
 ## ApiConsumer Configuration
-
+Both Api Actions require a ConsumerKey to be passed in the request header. Based on the ConsumerKey RestClient Gateway can fetch the required partner configurtaions (Endpoint, AuthSecret etc) and call differnet third party endpoints accoringly. Below is the current configuration for the same 
+`"ConsumerKeyPartnerConfiguration": {
+    "PartnerConfigurations": [
+      {
+        "ConsumerKey": "IMC",
+        "PartnerBaseEndpoint": "https://api.taxjar.com/",
+        "AuthToken": "5da2f821eee4035db4771edab942a4cc",
+        "TokenAuthRequired": true
+      },
+      {
+        "ConsumerKey": "IMC_TEST",
+        "PartnerBaseEndpoint": "https://sample.com",
+        "AuthToken": "test_key",
+        "TokenAuthRequired": false
+      }
+    ]
+  }`
+  
 ## Api Actions
 
 ## Testing
