@@ -39,8 +39,8 @@ cd TaxApi
 As shown in the screen shot below this solution contains 5 different projects  
 1. **IMC.TaxApi.Host** : This is the host project for this solution. It conatins the initialization of all the depencies in Startup file, Conatins TaxController , which has definition for both the action methods, launchSetting information and appsettings.json files. 
 2. **IMC.TaxApi.Core** : This project contains below directories. 
-1. Providers : This directory contains all the providers for this solution, these providers act as an service layer and conatin all the Orchestartion logic in it. 
-2. Repositoies : This directory contains all "Data Access Layers"/Repository classes. These repositories can communicate to the required ApiClients based on the ApiConsumer value.
+    1. Providers : This directory contains all the providers for this solution, these providers act as an service layer and conatin all the Orchestartion logic in it. 
+    2. Repositoies : This directory contains all "Data Access Layers"/Repository classes. These repositories can communicate to the required ApiClients based on the ApiConsumer value.
 Validators : Contains all the request valodator classes. 
 Mappers : Conatins all request and response mapper classes. 
 RestClients : Contains the wrapper for all the downstream/external partner rest clients. 
