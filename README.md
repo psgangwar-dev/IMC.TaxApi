@@ -52,7 +52,9 @@ As shown in the screen shot below this solution contains 5 different projects
 
 
 ## ApiConsumer Configuration
-Both Api Actions require a ConsumerKey to be passed in the request header. Based on the ConsumerKey RestClient Gateway can fetch the required partner configurtaions (Endpoint, AuthSecret etc) and call differnet third party endpoints accoringly. Below is the current configuration for the same 
+Both Api Actions require a ConsumerKey to be passed in the request header. Based on the ConsumerKey RestClient Gateway can fetch the required partner configurtaions (Endpoint, AuthSecret etc) and call differnet third party endpoints accoringly. Below is the current configuration for the same.
+
+**appSettings.json**
 `"ConsumerKeyPartnerConfiguration": {
     "PartnerConfigurations": [
       {
