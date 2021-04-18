@@ -87,19 +87,30 @@ LaunchSetting.js has the swagger URL as the launch URL. Once the code is execute
 
 
     **Request Section**
-    ![image](https://user-images.githubusercontent.com/82673102/115161246-9a432000-a06a-11eb-9615-9c69064026d0.png)
+        
+        ![image](https://user-images.githubusercontent.com/82673102/115161246-9a432000-a06a-11eb-9615-9c69064026d0.png)
     
     **Response**
-    ![image](https://user-images.githubusercontent.com/82673102/115161274-cced1880-a06a-11eb-94bc-0725817c3752.png)
+        
+        ![image](https://user-images.githubusercontent.com/82673102/115161274-cced1880-a06a-11eb-94bc-0725817c3752.png)
 
 
 2. `POST /v1/tax/ordersaletax`
 
 
     **Request Section**
+        
+        ![image](https://user-images.githubusercontent.com/82673102/115161993-ccef1780-a06e-11eb-8cb2-6f4b972380cd.png)
     
+    **Error Response**
     
-    **Response**
+        ![image](https://user-images.githubusercontent.com/82673102/115162020-fa3bc580-a06e-11eb-8417-4d7ba26d4367.png)
+        
+    **Success Response**
+    
+        ![image](https://user-images.githubusercontent.com/82673102/115162116-9a91ea00-a06f-11eb-9033-543edce1b818.png)
+
+        
 
 ## Version History
     * ReadMe.md Created By Prabha S Gangwar on 04/17/2021
