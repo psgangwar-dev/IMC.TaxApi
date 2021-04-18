@@ -1,32 +1,18 @@
 // {type:sequence}
-// Offers
+// GetOrderSalesTax
 // {generate:true}
-//Get Offers
-[Browser]-[note: 1. Display Offers {bg:cornsilk}]
-[Browser]GET /offers >[UI-API]
-[UI-API]GET /TBD? >[OAPI]
-[OAPI]Choose Offer Service>[OAPI]
-[OAPI]-[note: Strategy Selector Selector (Product/ProductItem){bg:cornsilk}]
-[Amex-OfferService]response .>[OAPI]
-[OAPI]response .>[UI-API]
-[UI-API]response .>[Browser]
-
-//Get Offer
-[Browser]-[note: 2. Display a single offer {bg:cornsilk}]
-[Browser]GET /offer/{id} >[UI-API]
-[UI-API]GET /TBD? >[OAPI]
-[OAPI]Choose Offer Service>[OAPI]
-[OAPI]-[note: Strategy Selector Selector (Product/ProductItem){bg:cornsilk}]
-[Amex-OfferService]response .>[OAPI]
-[OAPI]response .>[UI-API]
-[UI-API]response .>[Browser]
-
-//Add Offer
-[Browser]-[note: 3. Add an offer {bg:cornsilk}]
-[Browser]POST /offer/{id}/add >[UI-API]
-[UI-API]POST /TBD? >[OAPI]
-[OAPI]Choose Offer Service>[OAPI]
-[OAPI]-[note: Strategy Selector Selector (Product/ProductItem){bg:cornsilk}]
-[Amex-OfferService]response .>[OAPI]
-[OAPI]response .>[UI-API]
-[UI-API]response .>[Browser]
+//POST GetOrderSalesTax
+[ApiConsumer]POST /v1/tax/ordersaletax >[TaxAPI/Controller]
+[TaxAPI/Controller] GetOrderSalesTax(GetOrderSalesTaxRequestModel) >[TaxApiProvider]
+[TaxApiProvider] ValidateRequest() >[TaxApiProvider]
+[TaxApiProvider] MapGetOrderSalesTaxRequest(GetOrderSalesTaxRequestModel) >[TaxProviderMapper]
+[TaxProviderMapper] GetOrderSalesTaxRequest .>[TaxApiProvider]
+[TaxApiProvider] GetOrderSalesTax(GetOrderSalesTaxRequest) >[TaxApiRepository]
+[TaxApiRepository] PostAsync(payLoad) >[TaxJarApiClient]
+[TaxJarApiClient] VerifyApiConsumer() >[TaxJarApiClient]
+[TaxJarApiClient] /POST https://api.taxjar.com/* >[TaxJar]
+[TaxJar] ordertaxResponse .>[TaxJarApiClient]
+[TaxJarApiClient] getOrderSalesTaxResponse .>[TaxApiRepository]
+[TaxApiRepository] getOrderSalesTaxResponse .>[TaxApiProvider]
+[TaxApiProvider] getOrderSalesTaxResponse .>[TaxAPI/Controller]
+[TaxAPI/Controller] getOrderSalesTaxResponse .>[ApiConsumer]

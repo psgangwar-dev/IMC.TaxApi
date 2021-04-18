@@ -1,0 +1,18 @@
+// {type:sequence}
+// GetTaxRates
+// {generate:true}
+//Get GetTaxRates
+[ApiConsumer]GET /v1/tax/rate >[TaxAPI/Controller]
+[TaxAPI/Controller] GetTaxRates(getTaxRateRequest) >[TaxApiProvider]
+[TaxApiProvider] ValidateRequest() >[TaxApiProvider]
+[TaxApiProvider] MapTaxRatesUri() >[TaxProviderMapper]
+[TaxProviderMapper] uri .>[TaxApiProvider]
+[TaxApiProvider] GetTaxRates(uri) >[TaxApiRepository]
+[TaxApiRepository] GetAsync(payLoad) >[TaxJarApiClient]
+[TaxJarApiClient] VerifyConsumer() >[TaxJarApiClient]
+[TaxJarApiClient] /GET https://api.taxjar.com/* >[TaxJar]
+[TaxJar] taxResponse .>[TaxJarApiClient]
+[TaxJarApiClient] getTaxRateResponse .>[TaxApiRepository]
+[TaxApiRepository] getTaxRateResponse .>[TaxApiProvider]
+[TaxApiProvider] getTaxRateResponse .>[TaxAPI/Controller]
+[TaxAPI/Controller] getTaxRateResponse .>[ApiConsumer]
