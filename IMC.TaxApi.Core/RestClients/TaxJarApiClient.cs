@@ -69,16 +69,18 @@ namespace IMC.TaxApi.Core.RestClients
                         T value = await response.Content.ReadAsAsync<T>();
                         return value;
                     }
+                    else
+                    {
+                        var errorResp = response.Content.ReadAsStringAsync().Result;
+                        var deserializedErrorResponse = JsonConvert.DeserializeObject<PartnerErrorInfo>(errorResp);
+                        throw new InvalidOperationException(deserializedErrorResponse.detail);
+                    }
                 }
-
-                _logger.LogWarning($"ApiCall: StatusCode={response.StatusCode}");
-
-                return default(T);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"ApiCall: Exception={ex}");
-                throw new Exception(ex.Message);
+                _logger.LogError($"Partner Call Faile with an Error={ex}");
+                throw;
             }
         }
 
@@ -107,16 +109,18 @@ namespace IMC.TaxApi.Core.RestClients
                         T value = await response.Content.ReadAsAsync<T>();
                         return value;
                     }
+                    else
+                    {
+                        var errorResp = response.Content.ReadAsStringAsync().Result;
+                        var deserializedErrorResponse = JsonConvert.DeserializeObject<PartnerErrorInfo>(errorResp);
+                        throw new InvalidOperationException(deserializedErrorResponse.detail);
+                    }
                 }
-
-                _logger.LogWarning($"ApiCall: StatusCode={response.StatusCode}");
-
-                return default(T);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"ApiCall: Exception={ex}");
-                throw new Exception(ex.Message);
+                _logger.LogError($"Partner Call Faile with an Error={ex}");
+                throw;
             }
         }
 

@@ -10,9 +10,10 @@ namespace ICM.TaxApi.Models.Domain
         /// Error Code
         /// </summary>
         public string Code { get; set; }
+
         /// <summary>
-        /// Error message
+        /// Error messages
         /// </summary>
-        public string Message { get; set; }
+        public IEnumerable<string> ErrorMessages { get; set; }
     }
 }

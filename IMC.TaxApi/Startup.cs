@@ -5,6 +5,7 @@ using IMC.TaxApi.Core.Repository;
 using IMC.TaxApi.Core.RestClients;
 using IMC.TaxApi.Core.Validators;
 using IMC.TaxApi.Host;
+using IMC.TaxApi.Host.ApiFilters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -46,6 +47,7 @@ namespace IMC.TaxApi
 
             services.AddMvc(options =>
             {
+                options.Filters.Add(typeof(ExceptionHandleFilter));
                 options.AllowEmptyInputInBodyModelBinding = true;
             }).AddJsonOptions(options =>
             {
