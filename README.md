@@ -83,13 +83,23 @@ LaunchSetting.js has the swagger URL as the launch URL. Once the code is execute
 ![image](https://user-images.githubusercontent.com/82673102/115161077-99f65500-a069-11eb-99ef-3cefcdbc7c6a.png)
 
 ## Testing
-1. `GET /v1/tax/rate` : Gets the Tax rates for a given location
+1. `GET /v1/tax/rate`
+
+
     **Request Section**
     ![image](https://user-images.githubusercontent.com/82673102/115161246-9a432000-a06a-11eb-9615-9c69064026d0.png)
     
     **Response**
     ![image](https://user-images.githubusercontent.com/82673102/115161274-cced1880-a06a-11eb-94bc-0725817c3752.png)
 
+
+2. `POST /v1/tax/ordersaletax`
+
+
+    **Request Section**
+    
+    
+    **Response**
 
 ## Version History
     * ReadMe.md Created By Prabha S Gangwar on 04/17/2021
