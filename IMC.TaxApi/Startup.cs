@@ -1,3 +1,9 @@
+using ICM.TaxApi.Models.Entities;
+using IMC.TaxApi.Core.Providers;
+using IMC.TaxApi.Core.Repository;
+using IMC.TaxApi.Core.RestClients;
+using IMC.TaxApi.Core.Validators;
+using IMC.TaxApi.Host;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,8 +32,29 @@ namespace IMC.TaxApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            // Adding Swagger 
-            services.AddSwaggerGen();
+            // Swagger documenation
+            services.AddSwaggerGen(c =>
+            {
+                c.EnableAnnotations();
+                c.OperationFilter<CustomFilters>();
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "TaxApi Swagger Documentation", Version = "v1" });
+            });
+
+            // Http Client
+            services.AddHttpClient();
+
+            // Api level dependecies 
+            services.AddSingleton<ITaxRepository, TaxRepository>();
+            services.AddSingleton<ITaxProvider, TaxProvider>();
+            services.AddSingleton<ITaxProviderValidator, TaxProviderValidator>();
+            //services.AddSingleton<Itax, UserMapper>();
+            services.AddSingleton<ITaxJarApiClient, TaxJarApiClient>();
+
+            services.AddHttpContextAccessor();
+            services.AddOptions();
+            ConsumerKeyPartnerConfiguration opts = new ConsumerKeyPartnerConfiguration();
+            Configuration.GetSection("ConsumerKeyPartnerConfiguration").Bind(opts);
+            services.Configure<ConsumerKeyPartnerConfiguration>(Configuration.GetSection("ConsumerKeyPartnerConfiguration"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +66,6 @@ namespace IMC.TaxApi
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseSwagger();
@@ -49,7 +75,6 @@ namespace IMC.TaxApi
             });
 
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

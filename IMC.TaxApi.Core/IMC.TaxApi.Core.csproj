@@ -4,4 +4,20 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICM.TaxApi.Models\ICM.TaxApi.Models.csproj" />
+  </ItemGroup>
+
 </Project>

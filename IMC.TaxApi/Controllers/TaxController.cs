@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ICM.TaxApi.Models.Domain;
+using IMC.TaxApi.Core.Providers;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,50 +13,38 @@ namespace IMC.TaxApi.Controllers
     [Route("v1/[controller]")]
     public class TaxController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<TaxController> _logger;
+        private readonly ITaxProvider _taxProvider;
 
-        public TaxController(ILogger<TaxController> logger)
+        public TaxController(ILogger<TaxController> logger,
+                             ITaxProvider taxProvider)
         {
             _logger = logger;
+            _taxProvider = taxProvider;
         }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
+        [Route("rate")]
         [HttpGet]
-        public IEnumerable<WeatherForecast> GetTaxRates()
+        public async Task<IActionResult> GetTaxRates([FromQuery] GetTaxRateRequest request)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            var getTaxRateResponse = await _taxProvider.GetTaxRates(request);
+            return Ok(getTaxRateResponse);
         }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
+        [Route("ordersaletax")]
         [HttpPost]
-        public IEnumerable<WeatherForecast> GetOrderSalesTax()
+        public async Task<IActionResult> GetOrderSalesTax([FromBody] GetOrderSalesTaxRequestModel getOrderSalesTaxRequest)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            var getOrderSalesTaxResponse = await _taxProvider.GetOrderSalesTax(getOrderSalesTaxRequest);
+            return Ok(getOrderSalesTaxResponse);  
         }
     }
 }

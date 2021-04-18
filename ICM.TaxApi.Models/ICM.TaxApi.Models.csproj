@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\" />
-    <Folder Include="Entities\" />
+    <Folder Include="Shared\" />
   </ItemGroup>
 
 </Project>

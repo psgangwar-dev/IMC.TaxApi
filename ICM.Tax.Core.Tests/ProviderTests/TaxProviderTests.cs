@@ -8,7 +8,7 @@ namespace ICM.Tax.Core.Tests
         [Fact]
         public void Test1()
         {
-
+            
         }
     }
 }

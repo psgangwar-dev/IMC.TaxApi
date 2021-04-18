@@ -4,14 +4,14 @@
     "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj": {
+    "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\ICM.TaxApi.Models\\ICM.TaxApi.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj",
-        "projectName": "IMC.TaxApi.Core",
-        "projectPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\ICM.TaxApi.Models\\ICM.TaxApi.Models.csproj",
+        "projectName": "ICM.TaxApi.Models",
+        "projectPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\ICM.TaxApi.Models\\ICM.TaxApi.Models.csproj",
         "packagesPath": "C:\\Users\\Prabh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\obj\\",
+        "outputPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\ICM.TaxApi.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,89 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj",
+        "projectName": "IMC.TaxApi.Core",
+        "projectPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\IMC.TaxApi.Core.csproj",
+        "packagesPath": "C:\\Users\\Prabh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\IMC.TaxApi.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Prabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\ICM.TaxApi.Models\\ICM.TaxApi.Models.csproj": {
+                "projectPath": "C:\\Users\\Prabh\\PS\\GitHub\\IMC.TaxApi\\IMC.TaxApi\\ICM.TaxApi.Models\\ICM.TaxApi.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Net.Http.Formatting.Extension": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

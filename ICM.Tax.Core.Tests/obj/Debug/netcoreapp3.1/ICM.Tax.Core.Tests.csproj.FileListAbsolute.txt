@@ -87,7 +87,6 @@ C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\bin\Debug\netc
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.csprojAssemblyReference.cache
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.AssemblyInfoInputs.cache
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.AssemblyInfo.cs
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\ICM.Tax.Core.Tests\obj\Debug\netcoreapp3.1\ICM.Tax.Core.Tests.csproj.CoreCompileInputs.cache

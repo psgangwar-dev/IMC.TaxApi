@@ -1,9 +1,12 @@
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\bin\Debug\netcoreapp3.1\IMC.TaxApi.Core.deps.json
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\bin\Debug\netcoreapp3.1\IMC.TaxApi.Core.dll
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\bin\Debug\netcoreapp3.1\IMC.TaxApi.Core.pdb
+C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\bin\Debug\netcoreapp3.1\ICM.TaxApi.Models.dll
+C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\bin\Debug\netcoreapp3.1\ICM.TaxApi.Models.pdb
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.csprojAssemblyReference.cache
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.AssemblyInfoInputs.cache
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.AssemblyInfo.cs
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.csproj.CoreCompileInputs.cache
+C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.csproj.CopyComplete
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.dll
 C:\Users\Prabh\PS\GitHub\IMC.TaxApi\IMC.TaxApi\IMC.TaxApi.Core\obj\Debug\netcoreapp3.1\IMC.TaxApi.Core.pdb
