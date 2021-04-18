@@ -87,16 +87,13 @@ LaunchSetting.js has the swagger URL as the launch URL. Once the code is execute
 
 
     **Request Section**
-        
         ![image](https://user-images.githubusercontent.com/82673102/115161246-9a432000-a06a-11eb-9615-9c69064026d0.png)
     
     **Response**
-        
         ![image](https://user-images.githubusercontent.com/82673102/115161274-cced1880-a06a-11eb-94bc-0725817c3752.png)
 
 
 2. `POST /v1/tax/ordersaletax`
-
 
     **Request Section**
         ![image](https://user-images.githubusercontent.com/82673102/115161993-ccef1780-a06e-11eb-8cb2-6f4b972380cd.png)
