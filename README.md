@@ -74,14 +74,14 @@ Both Api Actions require a ConsumerKey to be passed in the request header. Based
   
 ## Api Actions/Methods
 1. `GET /v1/tax/rate` : Gets the Tax rates for a given location
-    Sequence Diagram : 
+    Sequence Diagram : https://github.com/psgangwar-dev/IMC.TaxApi/blob/main/Documentation/SequenceDiagrams/TaxRateSequenceDiagram.yuml
     
     ![image](https://user-images.githubusercontent.com/82673102/115162659-c6629f00-a072-11eb-876f-3a6c16774250.png)
 
         
 3. `POST /v1/tax/ordersaletax` : Calculates the taxes for an order
     
-    Sequence Diagram : 
+    Sequence Diagram : https://github.com/psgangwar-dev/IMC.TaxApi/blob/main/Documentation/SequenceDiagrams/TaxForAnOrderSequenceDiagram.yuml
  
     ![image](https://user-images.githubusercontent.com/82673102/115162610-8ef3f280-a072-11eb-8e7f-62bd55923066.png)
 
