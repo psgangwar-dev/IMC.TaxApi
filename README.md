@@ -44,6 +44,9 @@ As shown in the screen shot below this solution contains 5 different projects
     3. **Validators** : Contains all the request valodator classes. 
     4. **Mappers** : Conatins all request and response mapper classes. 
     5. **RestClients** : Contains the wrapper for all the downstream/external partner rest clients. 
+3. **IMC.TaxApi.Models** : This is a shared project which contains the definition of all request and response models, Entities required by the Api, and other shared class e.g. Contants.cs class.
+4. **IMC.TaxApi.Host.Tests** : Unit test project for for IMC.TaxApi.Host project
+5. **IMC.TaxApi.Core.Test** : Unit test project for for IMC.TaxApi.Core project
 
 ![image](https://user-images.githubusercontent.com/82673102/115160120-8eecf600-a064-11eb-9ab1-b00a262a3e25.png)
 
