@@ -72,10 +72,15 @@ Both Api Actions require a ConsumerKey to be passed in the request header. Based
     ]
   }`
   
-## Api Actions
+## Api Actions/Methods
+1. `GET /v1/tax/rate` : Gets the Tax rates for a given location
+
+3. `POST /v1/tax/ordersaletax` : Calculates the taxes for an order
 
 ## Testing
 
 ## Swagger Documetation
 
 ## Version History
+    * ReadMe.md Created By Prabha S Gangwar on 04/17/2021
+    * Content updated by Prabha S Gangwar on 04/18/2021
