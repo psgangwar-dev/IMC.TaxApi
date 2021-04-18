@@ -8,15 +8,12 @@ TaxApi API endpoints provide detailed sales tax rates and calculations. Currentl
 
 * [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
-* [Api UML](#api-uml-field) 
-* [Api Dependency](#api-dependency-field) 
-* [Api Architecture](#api-arc-field) 
+* [Code Structure](#code-structure)
+* [ApiConsumer Configuration](#api-configuration)
+* [Api Actions](#api-actions) 
 * [Testing](#testing)
-* [Api Security](#api-security-field) 
-* [Api Configuration](#api-config-field) 
-* [Api Swagger](#api-swagger-field) 
-* [Api in Action](#api-action-field) 
-* [Authors](#api-authors-field) 
+* [Swagger Documetation](#api-swagger-field) 
+* [Version History](#api-version-history) 
 
 
 ## Getting Started
@@ -38,3 +35,14 @@ cd [working directory] #(e.g. ~/code or C:\users\you\src)
 git clone https://github.com/psgangwar-dev/IMC.TaxApi.git
 cd TaxApi
 ```
+## Code Structure
+
+## ApiConsumer Configuration
+
+## Api Actions
+
+## Testing
+
+## Swagger Documetation
+
+## Version History
