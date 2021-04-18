@@ -75,7 +75,7 @@ namespace ICM.Tax.Core.Tests
                  .Returns(Task.FromResult(mockResponse)).Verifiable();
 
             // Act
-            var actualResponse = await _taxRepository.TaxForOrder(fakeRequest) as GetOrderSalesTaxResponse;
+            var actualResponse = await _taxRepository.GetOrderSalesTax(fakeRequest) as GetOrderSalesTaxResponse;
 
             // Assert
             Assert.NotNull(actualResponse);

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using ICM.TaxApi.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
 using ICM.TaxApi.Models.Entities;
+using IMC.TaxApi.Core.Mappers;
 
 namespace ICM.Tax.Core.Tests
 {
@@ -17,13 +18,16 @@ namespace ICM.Tax.Core.Tests
         private Mock<ILogger<TaxProvider>> _taxProviderLogger;
         private Mock<ITaxRepository> _taxRepository;
         private Mock<ITaxProviderValidator> _taxProviderValidator;
+        private Mock<ITaxProviderMapper> _taxProviderMapper;
+
         private ITaxProvider _taxProvider;
         public TaxProviderTests()
         {
             _taxProviderLogger = new Mock<ILogger<TaxProvider>>();
             _taxRepository = new Mock<ITaxRepository>();
             _taxProviderValidator = new Mock<ITaxProviderValidator>();
-            _taxProvider = new TaxProvider(_taxProviderLogger.Object, _taxRepository.Object, _taxProviderValidator.Object);
+            _taxProviderMapper = new Mock<ITaxProviderMapper>();
+            _taxProvider = new TaxProvider(_taxProviderLogger.Object, _taxRepository.Object, _taxProviderValidator.Object, _taxProviderMapper.Object);
         }
 
         [Fact]
@@ -85,7 +89,7 @@ namespace ICM.Tax.Core.Tests
                 To_country = toCountry
             };
 
-            _taxRepository.Setup(x => x.TaxForOrder(It.IsAny<GetOrderSalesTaxRequest>()))
+            _taxRepository.Setup(x => x.GetOrderSalesTax(It.IsAny<GetOrderSalesTaxRequest>()))
                  .Returns(Task.FromResult(mockResponse)).Verifiable();
 
             // Act 

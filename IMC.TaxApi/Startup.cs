@@ -1,4 +1,5 @@
 using ICM.TaxApi.Models.Entities;
+using IMC.TaxApi.Core.Mappers;
 using IMC.TaxApi.Core.Providers;
 using IMC.TaxApi.Core.Repository;
 using IMC.TaxApi.Core.RestClients;
@@ -55,7 +56,7 @@ namespace IMC.TaxApi
             services.AddSingleton<ITaxRepository, TaxRepository>();
             services.AddSingleton<ITaxProvider, TaxProvider>();
             services.AddSingleton<ITaxProviderValidator, TaxProviderValidator>();
-            //services.AddSingleton<Itax, UserMapper>();
+            services.AddSingleton<ITaxProviderMapper, TaxProviderMapper>();
             services.AddSingleton<ITaxJarApiClient, TaxJarApiClient>();
 
             services.AddHttpContextAccessor();

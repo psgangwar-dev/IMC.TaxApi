@@ -13,6 +13,8 @@ namespace IMC.TaxApi.Controllers
     [Route("v1/[controller]")]
     public class TaxController : ControllerBase
     {
+        #region Ctro and Class Level variable
+
         private readonly ILogger<TaxController> _logger;
         private readonly ITaxProvider _taxProvider;
 
@@ -23,10 +25,14 @@ namespace IMC.TaxApi.Controllers
             _taxProvider = taxProvider;
         }
 
+        #endregion
+
+        #region Controller Actions
+
         /// <summary>
-        /// 
+        /// This cotroller action is used to fetch the sales tax rates for a given location.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>GetTaxRateResponse</returns>
         [Route("rate")]
         [HttpGet]
         public async Task<IActionResult> GetTaxRates([FromQuery] GetTaxRateRequest request)
@@ -36,15 +42,17 @@ namespace IMC.TaxApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// This cotroller action is used to fetch the sales tax that should be collected for a given order.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>GetOrderSalesTaxResponseModel</returns>
         [Route("ordersaletax")]
         [HttpPost]
         public async Task<IActionResult> GetOrderSalesTax([FromBody] GetOrderSalesTaxRequestModel getOrderSalesTaxRequest)
         {
             var getOrderSalesTaxResponse = await _taxProvider.GetOrderSalesTax(getOrderSalesTaxRequest);
-            return Ok(getOrderSalesTaxResponse);  
+            return Ok(getOrderSalesTaxResponse);
         }
+
+        #endregion
     }
 }

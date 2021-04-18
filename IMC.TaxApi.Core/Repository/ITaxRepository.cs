@@ -11,6 +11,6 @@ namespace IMC.TaxApi.Core.Repository
     {
         Task<GetTaxRateResponse> GetTaxRateResponse(string uri);
 
-        Task<GetOrderSalesTaxResponse> TaxForOrder(GetOrderSalesTaxRequest apiRequest);
+        Task<GetOrderSalesTaxResponse> GetOrderSalesTax(GetOrderSalesTaxRequest apiRequest);
     }
 }
